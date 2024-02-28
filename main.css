@@ -1,8 +1,17 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #e4e2d1d8;
   text-align: center;
   padding: 20px;
+  background-image: url("metamask.png");
+  background-repeat: no-repeat;
+  background-position: center calc(100% - 50px); /* Centered horizontally, 50px up from the bottom */
+
+  background-size: 200px;
 }
 
 .header {
