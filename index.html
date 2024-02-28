@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MetaMask Connection Demo</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2>EtherConnect DApp</h2>
+      <div class="button-container">
+        <button id="connectButton">Connect Wallet</button>
+        <button id="logoutButton" style="display: none">Disconnect</button>
+      </div>
+    </div>
+
+    <div id="balance">Account Balance:</div>
+    <div id="network"></div>
+    <div id="nonce"></div>
+
+    <div id="metaMaskModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>MetaMask Required</h2>
+        <p id="modalMessage">
+          To use this DApp, please click on the MetaMask extension icon in your
+          browser to continue. If you do not have MetaMask installed, you can
+          <a href="https://metamask.io/download.html" target="_blank"
+            >download it here</a
+          >.
+        </p>
+      </div>
+    </div>
+
+    <p id="disclaimer">
+      (DApp only works with the Metamask extension installed)
+    </p>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="meta.js"></script>
+  </body>
+</html>
